@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	
+    <script src="week9.js"></script>
+	
+    <title>Week 9</title>
+    <style>
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+		#date {
+		  color: #435470;
+		  font-size: 18px
+		}
+		#time {
+			color: #435470;
+			font-size: 24px
+			top: 10px;
+		  	padding-bottom: 20px;
+		}
+    </style>
+</head>
+
+<body onload="startTime(); startDate()">
+<div class="fluid-container">
+	<div class="jumbotron text-center">
+		<img src="./images/clear water beach.jpg" alt="clear water beach" width=75%>
+    </div>
+</div>
+
+<div class="container">	
+	<div id="date">
+	</div>
+	<div id="time">
+	</div>
+</div>
+	
+<div class="container">
+	<h3> You don't know which place to visit today evening in Tampa? Let's choose a place for you!</h3>	
+	
+	<button type="button" class="btn btn-info" onclick="process()">Choose For Me</button>
+</div>
+
+<br>
+
+<div class="container">
+	<div id="display">
+		<!-- clear water beach will display here -->
+    </div>
+    </html>
+	
