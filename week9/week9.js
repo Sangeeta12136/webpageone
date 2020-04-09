@@ -12,8 +12,8 @@ var FloridaBeaches = [
 
 //pull random from array
 function process() {
-	var randomNumber = Math.floor(Math.random() * (restaurants.length));
-	document.getElementById('display').innerHTML = restaurants[randomNumber];
+	var randomNumber = Math.floor(Math.random() * (FloridaBeaches.length));
+	document.getElementById('display').innerHTML = FloridaBeaches[randomNumber];
 }
 
 //date
