@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Final Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Instructional Design<br>Models</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#ID Models" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> ID Models</a> 
+    <a href="#Importance" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> Importance</a> 
+    <a href="#Significance" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Significance</a> 
+    <a href="#Usage" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Usage</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Instructional Design Models</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id=" ID Modela">
+    <h1 class="w3-jumbo"><b>Instructional Design Models</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b> ID Models.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="/images/addie1.jpg" style="width:100%" onclick="onClick(this)" alt="addie1">
+      <img src="/images/dick&carey1.jpg" style="width:100%" onclick="onClick(this)" alt="dick & carey1">
+      <img src="/images/sam1.png" style="width:100%" onclick="onClick(this)" alt="sam1">
+    </div>
+
+    <div class="w3-half">
+      <img src="/images/addie2.jpg" style="width:100%" onclick="onClick(this)" alt="addie2">
+      <img src="/images/dick&carey2.gif" style="width:100%" onclick="onClick(this)" alt="dick & carey2">
+      <img src="/images/sam2.png" style="width:100%" onclick="onClick(this)" alt="sam2">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Importance -->
+  <div class="w3-container" id="Importance" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b> Importance.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>The best Instructional Design Models and their education importance in designing world!</p>
+    <p> The ADDIE model is the generic process traditionally used by instructional designers and training developers. The five phases—Analysis, Design, Development, Implementation, and Evaluation—represent a dynamic, flexible guideline for building effective training and performance support tools. Addie model is great for enhancing the designing part in education.
+    <p> One popular alternative to ADDIE is SAM, which stands for Successive Approximation Model. 
+        Created by Allen Interactions, SAM offers an instructional design approach consisting of repeated small steps, or iterations, that are intended to address some of the most common instructional design pain points, like meeting timelines, staying on budget, and collaborating with Subject Matter Experts (SMEs).</p>
+    <p>The Dick and Carey Model is an instructional systems design (ISD) model taking a systems approach and based on the research of Walter Dick of Florida State University and Lou and James Carey of the University of South Florida. ... Design and conduct a formative assessment to determine how to improve instruction</p>
+    </p>
+  </div>
+  
+  <!-- Significance -->
+  <div class="w3-container" id="Significance" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Significance.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>The best three models in the designing world.</p>
+    <p>The significance and importance of three main instructional design models: Addie, Sam, and Dick & Carey has been given below.
+
+
+    </p>
+    <p><b>The best three instructioanl design models</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/images/addie3.gif" alt="Addie3" style="width:100%">
+        <div class="w3-container">
+          <h3>Addie Model</h3>
+          <p class="w3-opacity">The foundational model of all models</p>
+          <p>Addie is an acronym for the five stages of a development process: Analysis, Design, Development, Implementation, and Evaluation. The ADDIE model relies on each stage being done in the given order but with a focus on reflection and iteration. The model gives you a streamlined, focused approach that provides feedback for continuous improvement. .</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/images/sam3.jpg" alt="sam3" style="width:100%">
+        <div class="w3-container">
+          <h3>Sam Model</h3>
+          <p class="w3-opacity">The second important model</p>
+          <p>Successive Approximation Model (SAM) is an Agile Instructional Systems Design model that has been introduced as an alternative to ADDIE that also emphasizes collaboration, efficiency and repetition..</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/images/dick &carey3.png" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Dick & Carey Model</h3>
+          <p class="w3-opacity"> A Unique Model</p>
+          <p>The Dick & Carey model is based on ten componenets. Similar to the Kemp model, the Dick and Carey model focuses on the interrelationship between elements in the design process.  For the Dick and Carey model those elements are context, content, learning and instrction.  Dick and Carey believe that the instrcutor, learners, materials, instructional activities, delivery system, and learning work together to produce the desired outcomes. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Usage -->
+  <div class="w3-container" id="Usage" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Usage.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Many professional Instructional Designers use the ADDIE model. The ADDIE model is an excellent way to structure your online course. ADDIE is an acronym that stands for Analyze, Design, Develop, Implement, and Evaluate. The best way to learn how to create an online course is by following the ADDIE model.</p>
+    <p>SAM model requires a close collaboration between all parties, such instructional designer, program manager, facilitators, clients, which ensures the best development of each course and training. If there is anything got alert, instant feedback will trigger the evaluation so that course development can be changed quickly.<p>
+    <p>The systems approach by Dick and Carey helps instructional designers develop curricula through a series of nine steps which work together toward a defined instructional goal. The Dick and Carey systems approach considers components such as the instructor, learners, materials, instructional activities, delivery system, and the learning and performance environment. Unlike traditional models, the Dick and Carey systems approach is portrayed as a curvilinear flow portrayed with one-way arrows. The curvilinear design portrays an easier way instructional design is practiced and developed </p>
+    </div>
+
+  
+        
+</li>
+</ul> 
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Please fill out the form below if you need more information on Instructional Design models!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"> <a href="" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
